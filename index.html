@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="filter">
+            <div class="item">
+                <label>Loại</label>
+                <select name="category">
+                    <option value="">- - -</option>
+                    <option value="T-shirt">T-shirt</option>
+                    <option value="Sơ mi">Sơ mi</option>
+                    <option value="Polo">Polo</option>
+                </select>
+            </div>
+            <div class="item">
+                <label>Màu sắc</label>
+                <select name="color">
+                    <option value="">- - -</option>
+                    <option value="Trắng">Trắng</option>
+                    <option value="Đen">Đen</option>
+                    <option value="Xám">Xám</option>
+                    <option value="Xanh dương">Xanh dương</option>
+                    <option value="Xanh lục">Xanh lục</option>
+                    <option value="Nâu">Nâu</option>
+                </select>
+            </div>
+            <div class="item">
+                <label>Tên sản phẩm</label>
+                <input type="text" name="name">
+            </div>
+            <div class="item">
+                <label>Giá thấp nhất</label>
+                <input type="number" name="minPrice">
+            </div>
+            <div class="item">
+                <label>Giá cao nhất</label>
+                <input type="number" name="maxPrice">
+            </div>
+            <div class="item submit">
+                <button>Tìm kiếm</button>
+            </div>
+        </form>
+        <div class="countResults">
+            Tìm thấy <b id="count">5</b> kết quả
+        </div>
+        <div id="list">
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
